@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'Literature-Decor'; 
+	src: url(fonts/Literature-Decor.ttf); 
+}
+
+html, body { 
+	height: 100%;
+	width: 100%;
+	position: static;
+	overflow-x:hidden; 
+	overflow-y:hidden;
+}
+
+body {
+    background: #115100;
+    background-size: 200% 200%;
+    animation: gradient 20s ease infinite;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    margin: 0px;
+}
+
+#name{
+	color: #52ab1d;
+    text-shadow: 1px 3px #00000087;
+    font-family: 'Literature-Decor';
+}
+
+#main{
+	display: flex;
+    height: 65%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    margin: 1%;
+}
+
+#footer{
+	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: #2c7202eb;
+    height: 20%;
+    color: white;
+}
+
+#school-logo{
+	height: 50%;
+    margin-right: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.footer-text{
+	height: 50%;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+#products-container{
+	height: 80%;
+    display: -webkit-inline-box;
+    width: 90%;
+    overflow-x: auto;
+    overflow-y: hidden;
+	padding-left:5%;
+}
+
+.product{
+	background: #2c7202eb;
+    height: 90%;
+    margin-right: 5%;
+    aspect-ratio: 1 / 1;
+    overflow-x: hidden;
+    padding: 1%;
+    color: white;
+}
+
+.product-img{
+	width: 100%;
+}
+
+.product-text{
+	
+}
+
+.chain{
+	position: absolute;
+    top: 0;
+}
+
+#header{
+	height: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    align-items: center;
+}
+
+.snow {
+	height: var(--size);
+	width: var(--size);
+	background: #ffffff8c;
+	border-radius: 50%;
+	position: absolute;
+	top: -5vh;
+	z-index: -1;
+}
+
+.ball {
+	height: var(--size);
+	width: var(--size);
+	top: -5vh;
+	z-index: -2;
+}
+
+#balls{
+	display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes snowfall {
+	0% {
+	transform: translate3d(0, -100vh, 0);
+	}
+	100% {
+	transform: translate3d(0, 100vh, 0);
+	}
+}
